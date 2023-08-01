@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.internal{
+			font-size: 20px;
+			color: blue;
+			font-family: cursive; 
+	
+	</style>
+	<title> CSS styles 27-7,28-7</title>
+	<link rel="stylesheet" type="text/css" href="external_styling.css">
+	
+</head>
+<body>
+	<h2> About Element selector </h2>
+	<p> First paragragh using element selector </p>
+	<h3> Multiple element selector </h3>
+	<span> Second para using element selector </span>
+	<h1> Univeral selector </h1>
+	<div> Div tag</div>
+	
+	<h1 id="abc"> This is a heading </h1>
+	<h3 class="internal"> This is a heading 1</h3>
+	
+	<h3 style="color:deeppink"> Inline Stylings </h3>
+	<p style="color:red;background-color:yellow"> Inline styles can be applied in the same html page with style attribute.</p>
+
+	<h3 style="color:deeppink"> Internal Stylings </h3>
+	<p class="internal">This is internal styling. These can be applied in same html page in head tag with style tag with using the selectors.</p>
+
+	<h3 style="color:deeppink"> External Stylings </h3>
+	<p class="external"> This is external styling applied in head tag with link tag of reference of external file with css extension.</p>
+
+	<h4 align="center"> Attribute  Selector </h4>
+	<input type="text">
+	<input type="number">
+	<input type="email">
+	<input type="password"><br>
+	<a href="">click </a> <br>
+	<img src="../html/180 Acre1.jpg">
+
+	<h1 align="center"> Pseudo Selector </h1>
+	<a href="">click here </a>
+	<a href=""> clhe</a>
+	<div> HI</div>
+</body>
+</html>
+<!--selectors in css
+	Class--.dot symbol is used  with any class name
+	Id--# symbol is used. in id we donot use same names 
+	Element--it is used by applying styles with a tag
+	Universal --it is used to apply styles to entair html page by using *star symbol.
+	Attribute--it is used to apply styles by using attributes like input type,a href,image src etc .
+	Psuedo  are used for internal and external stylings
+	if we use same properties/stylings for a text in all internal,external,inline stylings according to priority 1. inline  2.internal 3.external styles will be applied

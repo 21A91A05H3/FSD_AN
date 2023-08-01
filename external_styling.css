@@ -1,0 +1,101 @@
+/*.external{
+	border: 20px dashed green;
+	color:orange;
+	font-family: cursive;
+}
+#abc{
+	background-color: orange;
+	color:red;
+	font-family: cursive
+}
+p{
+	color:blue;
+	font-size: 30px;
+	font-family:cursive;
+}
+h2{
+	color:red;
+	font-size: 30px;
+	
+}
+h3,span{
+	color:deeppink;
+	font-size: 30px;
+}
+*{
+	font-family:cursive;
+
+	margin:0px;
+	padding: 0px
+}
+h4{
+	color:brown;
+}
+input[type]{
+	color:yellow;
+}
+input[type="text"]
+{
+	color:blue;
+}
+input[type="number"]{
+	color:violet;
+}
+a[href]{
+	background-color: orange;
+}
+img[src]{
+	
+	border:5px dashed green;
+	border-color: red;
+	height: 500px;
+	width:500px;
+}
+a:link{
+	color:green;
+}
+/*a:hover{
+	
+	background-color: red;
+	font-size: 40px;
+}
+a:visited{
+	color:pink;
+}
+div:hover{
+	background-color: pink;
+	height:400px;
+	width:400px;
+}
+a:active{
+	color:yellow;
+}
+div{
+	height: 456px;
+	width: 760px;
+	border: 5px solid red;
+	background-image: url('thub.png');
+	/*background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/*div{
+	height: 720px;
+	width: 723px;
+	border: 5px solid red;
+	background-image: url('task5.jpg');
+	/*background-repeat: no-repeat;
+	background-size: cover;
+}*/
+/*span{
+	height: 300px;
+	width: 600px;
+    box-shadow: 0 0 0 5px firebrick;
+    outline: dashed 5px  darkturquoise;
+}*/
+.boxborder-me{
+	border-radius: 5px;
+	box-shadow:0 0 0 5px firebrick;
+	outline:dashed 5px darkturquoise ;
+}
