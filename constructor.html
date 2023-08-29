@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Constructor</title>
+</head>
+<body>
+	<h1>Constructor Operators</h1>
+	<script type="text/javascript">
+		class Student{
+			constructor(rno){
+				this.rollno=rno;
+			}
+		}
+		let obj=new Student(1234);
+		console.log(obj.rollno)
+
+		class Student1{
+			constructor(rno,fname,lname,clg){
+				this.rollno=rno;
+				this.fname=fname;
+				this.lname=lname;
+				this.clg=clg;
+				this.fullname=function(){
+					return this.fname+" "+this.lname
+				}
+			}
+		}
+		let obj1=new Student1(1234,'naveena','kolli','Aditya');
+		let obj2=new Student1(1234,'lasya','kolli','Pragati');
+		console.log(obj1.rollno,obj1.fname,obj1.lname,obj1.clg);
+		console.log(obj2.rollno,obj2.fname,obj2.lname,obj2.clg);
+		document.write(obj1.fullname());
+
+
+
+		class Cars{
+			constructor(cname,colour,speed){
+				this.name=cname;
+				this.color=colour;
+				this.spd=speed;
+			}
+		}
+		let car1=new Cars('Nexa','Black',10);
+		console.log(car1.name,car1.color,car1.spd);
+	</script>
+</body>
+</html>

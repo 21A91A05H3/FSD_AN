@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods </title>
+</head>
+<body>
+	<h3>Array Methods</h3>
+	<p> This method creates new array and return it after iteration will completed</p>
+	<script type="text/javascript">
+			let friends=['lasya','ranji','jyoo','varshi','mouni'];
+			document.write("Map Function"+"<br>")
+			let arr=friends.map(function(ele,index,old_arr){
+				return ele
+			})
+			console.log(arr)
+
+			//or
+			let arr1=friends.map(test);
+			function test(ele,index,old_arr){
+				return "Dear"+" "+ele;
+			}
+			document.write(arr1)
+	</script>
+</body>
+</html>
+
+
+
+
+<!--
+map()
+forEach
+filter
+find
+some
+every <-->

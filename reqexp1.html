@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Regular expression exp1</title>
+</head>
+<body>
+	<input type="text" name="" id="i_id">
+	<button onclick="numornot()">Check Validation</button><br>
+	<button onclick="charornot()">Check Email</button><br>
+	<span id="s_id"></span>
+	<script type="text/javascript">
+		function numornot(){
+			re=/^[0-9]{10}$/
+			let n=document.getElementById('i_id').value;
+			output =re.test(n);   //correct by ($)
+			if(output==true){
+				document.getElementById('s_id').innerText='Correct';
+				document.getElementById('s_id').style.color='green';
+			}
+			else{
+				document.getElementById('s_id').innerText='Please enter correct format';
+				document.getElementById('s_id').style.color='red';
+			}
+		}
+
+		function charornot(){
+			//re=/^[a-z]+$/   //only small charcaters
+			//re=/^[A-Z]+$/    //only large characters
+			//re=/^[a-zA-z]+$/     //small and big characters
+			re=/^[a-zA-z0-9]+$/      //alpha numeric
+			re=/^\w+@[a-zA-Z_]+?\.[a-zA-z]{2,3}$/;
+			let n=document.getElementById('i_id').value;
+			output =re.test(n);   //correct by ($)
+			if(output==true){
+				document.getElementById('s_id').innerText='Correct';
+				document.getElementById('s_id').style.color='green';
+			}
+			else{
+				document.getElementById('s_id').innerText='Please enter correct format';
+				document.getElementById('s_id').style.color='red';
+			}
+		}
+	</script>
+</body>
+</html>
+
+<!--
+
+1.gunasivasaikarthikl
+ Check Validation
+Check Email
+Correct
+2.
+ABFHGIFRNVGK
+ Check Validation
+Check Email
+Correct
+3.
+BDGEVnbhwdvb
+ Check Validation
+Check Email
+Correct
+4.
+chfgvbhjcnmGFYFGUHIJL679678
+ Check Validation
+Check Email
+Corre<-->

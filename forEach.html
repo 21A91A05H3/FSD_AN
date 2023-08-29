@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> For Each Method</title>
+</head>
+<body>
+	<h1>Array Methods | For Each</h1>
+	<p>This method not creates any new array and return it after iteration will completed</p>
+	<script type="text/javascript">
+		let salaries=[4000,25000,30000];
+		document.write(salaries+"<br>");
+		salaries.forEach(function(amount,index,arr){
+			var increment=amount/10;
+			document.write(increment+"<br>")
+			arr[index]=amount+increment;
+		});
+		document.write(salaries+"<br>");
+	</script>
+</body>
+</html>

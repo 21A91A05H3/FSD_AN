@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Methods 1</title>
+</head>
+<body>
+	<table border="2px" cellspacing="0px" cellpadding="5px">
+		<tr>
+			<td>d</td>
+			<td>r</td>
+			<td>i</td>
+			<td>v</td>
+			<td>e</td>
+			<td></td>
+			<td>r</td>
+			<td>e</td>
+			<td>a</td>
+			<td>d</td>
+			<td>y</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+		</tr>
+	</table><br>
+	<script type="text/javascript">
+		let str='driveready';
+		function ss(str_name){
+			document.write("<b>"+str_name+"<br>")
+		}
+		ss("Original strig is:"+str);
+		ss("String length:"+str.length)
+		ss("String length"+str[2])
+		//charAt method
+		ss("Char At method ="+str.charAt(3))  //positin at 3  V
+		//indexOf method
+		ss("indexOf = "+str.indexOf('b'))
+		//repaet numbers last index
+		ss("LastIndex of="+str.lastIndexOf('r'))
+		let s='HELLO'
+		ss("Upper case of str="+str.toUpperCase())
+		ss("Lower case of str="+s.toLowerCase())
+		//trim method
+		let str1='    drive'
+		ss("trim method= "+str1.trim())//remove the spaces from the left to right
+		let str3=' lasya'
+		let str4=' kolli'
+		let str5='Naveena'
+		ss("Concatenation of two strings ="+str3.concat(str4))
+		ss("Concatenation of strings =" +str5.concat(str3,str4))
+		let str7='fsd drive ready batch'
+		//includes() => returns boolean values method
+		ss("includes method ="+str7.includes('batch'))
+		ss("includes method ="+str7.includes('afternoon'))
+
+		//converting string into array =>split() method
+		let str8='TechnicalHub'
+		ss(str8.split(""))  //string divides by based on delimination "&"
+		let str9='ravi&raju,ram';
+		console.log(str9.split(","))//string divides by based on delimination "&"
+
+		//stratswith and endswith returns the boolean values
+		let str10='karthik'
+		ss("Starts with = " +str10.startsWith('k')) 
+		ss("Starts with = " +str10.startsWith('K')) //returns true or false 
+		let str11='lasya'
+		ss("Ends with = "+str11.endsWith('a'))
+		ss("Ends with = "+str11.endsWith('A'))
+
+		//slice method
+		//Stringname.slice('startpos,endpos-1')
+		ss("Slice Method ="+str.slice(1,6)) //(1,6-1=5)
+		ss("Slice method =" +str.slice(-4)) //at last from inex from -1 to ---  eady
+		ss("Slice method =" +str.slice(-4,-2))
+
+		//substring method
+		//it allows only positive indexes
+		let s2='naveena'
+		ss("substring Method ="+s2.substring(1,4)) //1to(4-1)
+		ss("substring method =" +s2.substring(4,1)) //4,1=1,
+		ss("Substring method =" +s2.substring(-1)) //complete string will come
+
+		//substr method= substr(startpos,length of the charcaters from 1 st arg position)
+		ss("substr method ="+s2.substr(1,4))
+
+	</script>
+</body>
+</html>

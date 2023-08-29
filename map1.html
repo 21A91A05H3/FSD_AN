@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> MAp FUnction method</title>
+</head>
+<body>
+	<table border="1px" cellpadding="5" cellspacing="0" id="table_id">
+	</table>
+	<script type="text/javascript">
+		let trainees=[
+		{
+			'name':'lasya',
+			'roll' :1234
+		},
+		{
+			'name':'ranjitha',
+			'roll' :5678
+		}]
+		let tr=' ';
+		trainees.map(function(each_trainee,i,arr){
+			//document.write((i+1)+"."+each_trainees.name+" "+each_trainees.roll)
+			tr+="<tr><td>"+(i+1)+"</td><td>"+each_trainee.name+"</td><td>"+each_trainee.roll+"</td></tr>";
+		})
+		//console.log(tr)
+		document.getElementById('table_id').innerHTML=tr
+
+		let list=' ';
+		trainees.map(function(each_trainee,i,arr){
+			//document.write((i+1)+"."+each_trainees.name+" "+each_trainees.roll)
+			list+="<ol><li>"+(i+1)+"</li><li>"+each_trainee.name+"</li><li>"+each_trainee.roll+"</li></ol>";
+		})
+		//console.log(tr)
+		document.write(list)
+	</script>
+</body>
+</html>

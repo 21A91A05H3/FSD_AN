@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Javascript intro</title>
+</head>
+<body>
+		<h1> Javascript Introduction</h1>
+		<script type="text/javascript">
+			/*a=20;
+			document.write("the value of a is",a );
+			document.write("<br>");
+			var name='lasya'
+			name+=' kolli'
+			document.write(name.length);
+			var name='Naveena'
+			name+='  Lasya'
+			document.write(name+'&kolli');
+			var a;
+			document.write(a);//undefined
+			var a=10;
+			document.write(a);
+			var b='Hi hello'
+			alert(b);
+			window.alert('I am Lasya');
+			var c=20;
+			console.log(c);
+			document.write(typeof(c));
+			var arr=[10,20,'lasya'];
+			document.write(arr);
+			console.log(arr);
+			document.write(typeof(arr));
+			var trainees=[{
+				'name':'lasya',
+				'rollno':1234,
+				'college':'AEC',
+				'branch':'CSE'
+			},
+			{
+				'name':'Naveena',
+				'rollno':4567,
+				'college':'ACET',
+				'branch':'EEE'
+			}]
+			//console.log(trainees[0].name);
+			//console.log(trainees[1].rollno);
+			
+			for (var i = 0; i <trainees.length; i++) {
+				console.log(trainees[i]);
+				document.write((i+1)+"."+trainees[i].name,trainees[i].college,trainees[i].rollno,trainees[i].branch+"<br>");
+			}
+			var trainees=[{
+				'name':'lasya',
+				'rollno':1234,
+				'college':'AEC',
+				'branch':'CSE'
+			},
+			{
+				'name':'Naveena',
+				'rollno':4567,
+				'college':'ACET',
+				'branch':'EEE'
+			}]
+			for (var i in trainees)
+			{
+				document.write(trainees[i].name,trainees[i].rollno);
+			}*/
+			var trainee=[{
+				name:'lasya',
+				rollno:'1234',
+				college:'aec',
+				mail:'123@gmail.com'
+			},
+			{
+				name:'Ranjitha',
+				rollno:'4566',
+				college:'aec',
+				mail:'456@gmail.com'
+			}
+			]
+			for(i=0;i<trainee.length;i++){
+				document.write(i+1+".");
+				for(key in trainee[i]){
+					document.write(trainee[i][key]+" ");
+				}
+				document.write("<br>");
+			}
+		</script>
+</body>
+</html>

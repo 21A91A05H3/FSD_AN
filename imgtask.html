@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouse Event</title>
+</head>
+<body>
+  <center>
+  <h2>Mouse Events</h2>
+  <img onmouseover="onn()" src="p2.jpeg" onmouseout="off()" src="p3.jpeg" height="500px" width="500px" id="i1">
+</center>
+  <script type="text/javascript">
+    function onn(){
+      document.getElementById('i1').src="p2.jpeg";
+    }
+    function off(){
+      document.getElementById('i1').src="p3.jpeg";
+    }
+  </script>
+
+</body>
+</html>

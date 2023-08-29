@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Regular Expressions</title>
+</head>
+<body>
+	<h1>Regular Expressions</h1>
+	<script type="text/javascript">
+		
+	 //by using i at the end of regular expression then string which is case sensitive the it becomes to case insentive\
+	 	let str=/batch/
+		let output=str.test("fullstack Batch")
+		//console.log(output);
+		//if(output==true){
+		//	console.log("Valid")
+		//}
+		//else{
+		//	console.log("Not Valid")
+		//}
+		//console.log(output);
+		let str1=/batch/i 
+		let output1=str1.test("fullstack BATCH")
+		//console.log(output1);
+
+		//re2=/^b/i
+		//output2=re2.test("batch");//true
+		//output3=re2.test("tbatch");
+		//console.log(output2);
+		//console.log(output3);
+
+		re=/batch/g;   //for multiple indexes
+		res=re.exec("full stack batch course batch");
+		//console.log(res);
+		//console.log(res.index)
+		res=re.exec("full stack batch course batch");
+		//console.log(res.index)
+
+		//NUmbers validation
+		num=/^[0-9]{10}/	//valid up to 10 numbers but exceed the range
+		//num=/^[0-9]{10}$/ //valid uto 10 numbers with numbers not exceed range by $
+		//num=/^[9][0-9]{9}$/ //starting with 9
+		output=num.test("987654321009765467");
+		console.log(output)
+	</script>
+</body>
+</html>
